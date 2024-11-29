@@ -25,9 +25,9 @@ services:
         max-size: 10m
         max-file: "3"
     volumes:
-      - "${PWD}/dags:/usr/local/airflow/dags"
-      - "${PWD}/plugins:/usr/local/airflow/plugins"
-      - "${PWD}/requirements:/usr/local/airflow/requirements"
+      - "/Users/GarsiRW1/Documents/github/sdp-transformations/domains/sdp:/usr/local/airflow/dags"
+      - "/Users/GarsiRW1/Documents/github/sdp-transformations/requirements:/usr/local/airflow/requirements"
+      - "/Users/GarsiRW1/Documents/github/sdp-transformations/startup:/usr/local/airflow/startup"
     ports:
       - "8080:8080"
     command: resetdb

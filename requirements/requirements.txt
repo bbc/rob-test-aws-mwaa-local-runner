@@ -1,4 +1,23 @@
---constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.2/constraints-3.11.txt"
-
+# requirements.txt
+#--constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.2/constraints-3.11.txt"
+apache-airflow-providers-amazon==8.24.0
+apache-airflow-providers-dbt-cloud==3.8.1
+apache-airflow-providers-slack==8.7.1
 apache-airflow-providers-snowflake==5.5.1
+dbt-core>=1.8.7
+dbt-snowflake==1.8.3
+hdbcli==2.15.19
+pybarb==0.5.2
+requests==2.31.0
+snowflake-connector-python==3.10.1
+snowflake-sqlalchemy==1.5.3
+prettytable==3.11.0
+pandas==2.1.4
+pyyaml==6.0.1
+
+# astro-cosmos requirements
+astronomer-cosmos==1.7.0
 apache-airflow-providers-mysql==5.6.1
+
+# dag-factory requirements
+dag-factory==0.19.0
